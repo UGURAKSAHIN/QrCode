@@ -1,0 +1,12 @@
+C:\Users\hp\source\repos\QRBarkod\bin\Debug\QRBarkod.exe.config
+C:\Users\hp\source\repos\QRBarkod\bin\Debug\QRBarkod.exe
+C:\Users\hp\source\repos\QRBarkod\bin\Debug\QRBarkod.pdb
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.Form1.resources
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.Properties.Resources.resources
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.exe
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.pdb
+C:\Users\hp\source\repos\QRBarkod\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\hp\source\repos\QRBarkod\obj\Debug\QRBarkod.csproj.Up2Date
