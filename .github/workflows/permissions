@@ -1,4 +1,0 @@
-name: "My workflow"
-permissions:
-  contents: read
-  pull-requests: write
