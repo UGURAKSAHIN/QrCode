@@ -1,0 +1,20 @@
+- name: Finalize CodeQL database
+  run: |
+    /opt/hostedtoolcache/CodeQL/2.20.7/x64/codeql/codeql database finalize --finalize-dataset --threads=2 --ram=8192 /home/runner/work/_temp/codeql_databases/actions
+
+- name: Check CodeQL Database
+  run: ls -lah /home/runner/work/_temp/codeql_databases/actions
+
+- name: Setup CodeQL
+  uses: github/codeql-action/init@v2
+
+- name: Install CodeQL Latest
+  run: |
+    gh extension install github/gh-codeql
+    gh codeql version
+    
+- name: Check Runner Permissions
+  run: ls -lah /home/runner/work/_temp/codeql_databases && whoami
+
+- name: Fix Database Permissions
+  run: sudo chmod -R 777 /home/runner/work/_temp/codeql_databases
