@@ -4,10 +4,9 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    # PR'lerde de çalışması için
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * 0'  # Her pazar gece yarısı çalışır
+    - cron: '0 0 * * 0'
 
 jobs:
   analyze:
@@ -21,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'C#' ]  # Projeye göre: javascript, python, c-cpp, go, ruby vs.
+        language: [ 'C#' ]
 
     steps:
       - name: Checkout repository
@@ -32,9 +31,11 @@ jobs:
         with:
           languages: ${{ matrix.language }}
 
+      - name: Ensure gradlew is executable
+        run: chmod +x ./gradlew
+
       - name: Build project
-        run: |
-          ./gradlew build -x test
+        run: ./gradlew build -x test
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
