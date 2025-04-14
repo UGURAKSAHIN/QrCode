@@ -31,11 +31,5 @@ jobs:
         with:
           languages: ${{ matrix.language }}
 
-      - name: Ensure gradlew is executable
-        run: chmod +x ./gradlew
-
-      - name: Build project
-        run: ./gradlew build -x test
-
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
