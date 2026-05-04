@@ -1,24 +1,43 @@
+# OS
 .DS_Store
 Thumbs.db
 
+# IDE
 .vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Build
 dist/
 build/
 out/
+
+# Temp
 temp/
 .tmp/
+*.tmp
+*.bak
+*.swp
+*.swu
 
+# Logs
 *.log
 *.cache
 npm-debug.log*
 yarn-debug.log*
-yarn--error.log*
+yarn-error.log*
 
-*.bak
-*.tmp
-*.swp
-*.swu
+# Outputs (QR images vs)
+outputs/
